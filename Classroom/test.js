@@ -64,8 +64,20 @@
 
 // console.log(isAdmin);
 
-const firstPerson = { name: "Sam", age: 18 };
-const secondPerson = { age: 25, type: "admin" };
-const mergedObjects = { ...firstPerson, ...secondPerson };
+// const firstPerson = { name: "Sam", age: 18 };
+// const secondPerson = { age: 25, type: "admin" };
+// const mergedObjects = { ...firstPerson, ...secondPerson };
 
-console.log(mergedObjects);
+// console.log(mergedObjects);
+
+const data = {
+  temperatures: [-3, 14, 4],
+};
+
+// let firstValue = undefined;
+// if (data.temperatures) {
+//   firstValue = data.temperatures[0];
+// }
+
+const firstValue = data.temperatures?.[0];
+console.log(firstValue);
