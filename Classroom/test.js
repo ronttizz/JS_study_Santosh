@@ -42,7 +42,30 @@
 // console.log(height);
 // console.log(xyz);
 
-const lat = [5.234];
-const lng = [1.412];
-const point = [...lat, ...lng];
-console.log(point); // [5.234, 1.412];
+// const lat = [5.234];
+// const lng = [1.412];
+// const point = [...lat, ...lng];
+// console.log(point); // [5.234, 1.412];
+
+// const config = {
+//   id: 1,
+//   isAdmin: false,
+//   theme: {
+//     dark: false,
+//     accessibility: true,
+//   },
+// };
+
+// // const id = config.id;
+// // const isAdmin = config.isAdmin;
+// // const theme = config.theme;
+
+// const { id, isAdmin, theme } = config;
+
+// console.log(isAdmin);
+
+const firstPerson = { name: "Sam", age: 18 };
+const secondPerson = { age: 25, type: "admin" };
+const mergedObjects = { ...firstPerson, ...secondPerson };
+
+console.log(mergedObjects);
