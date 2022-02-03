@@ -7,9 +7,7 @@ Otherwise, it should return undefined.
  * @param {object} [user.info]
  * @param {last} [user.info.name]
  */
-const getFullName = (user) => {
-  return user.info?.name?.toLowerCase();
-};
+const getFullName = (user) => user.info?.name?.toLowerCase();
 
 // Sample usage - do not modify
 console.log(getFullName({ info: { name: "ALEX" } })); // "alex"
