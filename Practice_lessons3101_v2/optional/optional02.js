@@ -7,7 +7,7 @@ Re-write the getPaymentValue function without using if conditions.
  * @param {object} [user.payment.details]
  * @param {number} [user.payment.details.value]
  */
-const getPaymentValue = (user) => user.payment?.details?.value;
+const getPaymentValue = (user) => user?.payment?.details?.value;
 
 // Sample usage - do not modify
 console.log(getPaymentValue({ id: 1, name: "Alex" })); // undefined
