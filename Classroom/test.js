@@ -70,14 +70,29 @@
 
 // console.log(mergedObjects);
 
-const data = {
-  temperatures: [-3, 14, 4],
-};
+// const data = {
+//   temperatures: [-3, 14, 4],
+// };
 
 // let firstValue = undefined;
 // if (data.temperatures) {
 //   firstValue = data.temperatures[0];
 // }
 
-const firstValue = data.temperatures?.[0];
-console.log(firstValue);
+// const firstValue = data.temperatures?.[0];
+// console.log(firstValue);
+
+// const getPlaceholder = () => {
+//   console.log("getPlaceholder called");
+// };
+// const sayHello = (name) => {
+//   return `Hello ${name ?? getPlaceholder()}`;
+// };
+// console.log(sayHello("")); // "Hello Sam"
+const user = {
+  id: 1,
+  name: "Sam",
+  age: null,
+};
+console.log(user.age); // null
+console.log(user.birthday); // undefined
