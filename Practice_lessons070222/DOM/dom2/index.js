@@ -18,7 +18,7 @@ const getTheParagraphElement = () => {
   return document.querySelector("p") ?? "Element 'p' Not Found";
 };
 
-// Sample usage - do not modify
+// Sample usage -- do not modify
 console.log(getNavbarElement());
 console.log(getMainElement());
 console.log(getAboutFromFooter());
