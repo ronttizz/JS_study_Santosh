@@ -21,7 +21,7 @@ class Passport {
   }
 
   getInitials() {
-    return this.firstName.charAt(0) + this.lastName.charAt(0);
+    return this.firstName.charAt(0) + "." + this.lastName.charAt(0) + ".";
   }
 
   getIsValidName() {
