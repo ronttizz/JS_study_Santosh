@@ -16,9 +16,15 @@ const waitForCompleteClick = () => {
 
 // Update here...
 // This one works multiple times
+let i = 0;
 document.querySelector("#complete-btn").addEventListener("click", () => {
+  i++;
   waitForCompleteClick().then(() => {
     console.log("Complete clicked");
+    if (i > 5) {
+      document.querySelector("#complete-btn").setAttribute("disabled", "");
+      console.log("Dont click it too much!");
+    }
   });
 });
 
