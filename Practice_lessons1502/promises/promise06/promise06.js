@@ -15,6 +15,15 @@ const waitForCompleteClick = () => {
 };
 
 // Update here...
-waitForCompleteClick().then(() => {
-  console.log("Complete clicked");
+// This one works multiple times
+document.querySelector("#complete-btn").addEventListener("click", () => {
+  waitForCompleteClick().then(() => {
+    console.log("Complete clicked");
+  });
 });
+
+// this one works only one time
+
+// waitForCompleteClick().then(() => {
+//   console.log("Complete clicked");
+// });
