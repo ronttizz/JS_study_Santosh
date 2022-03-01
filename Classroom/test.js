@@ -89,10 +89,34 @@
 //   return `Hello ${name ?? getPlaceholder()}`;
 // };
 // console.log(sayHello("")); // "Hello Sam"
-const user = {
-  id: 1,
-  name: "Sam",
-  age: null,
-};
-console.log(user.age); // null
-console.log(user.birthday); // undefined
+// const user = {
+//   id: 1,
+//   name: "Sam",
+//   age: null,
+// };
+// console.log(user.age); // null
+// console.log(user.birthday); // undefined
+
+// let p = new Promise((resolve, reject) => {
+//   reject(Error("This fails"));
+// });
+
+// p.catch((error) => console.log(error.message));
+// p.catch((error) => console.log(error.message));
+
+// let p = new Promise((resolve, reject) => {
+//   reject(Error("This fails"));
+// })
+//   .catch((error) => console.log(error.message))
+//   .catch((error) => console.log(error.message));
+
+// new Promise((resolve, reject) => {
+//   resolve("Success");
+// })
+//   .then(() => {
+//     throw Error("Ohno");
+//   })
+//   .catch((error) => {
+//     return "actually, that works";
+//   })
+//   .catch((error) => console.log(error.message));
