@@ -16,13 +16,18 @@ and return its result. Also, visualize that the result of fetch is a Promise. Yo
 */
 
 const API = new FetchWrapper(
-  "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app"
+  "https://programmingjs-90a13-default-rtdb.europe-west1.firebasedatabase.app/"
 );
 
 const getChapters = () => {
-  API.get("/chapters.json").then((data) => {
+  API.get("chapters.json").then((data) => {
     displayCompletedChapters(data.filter((item) => item.isCompleted === true));
   });
+
+  //   ANOTHER WAY
+  //   API.get("chapters.json")
+  //     .then((data) => data.filter((item) => item.isCompleted === true))
+  //     .then((data) => displayCompletedChapters(data));
 };
 
 // do NOT modify this function
